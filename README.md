@@ -1,3 +1,7 @@
+"node_modules/tooltip.js/dist/tooltip.min.js",
+              "node_modules/popper.js/dist/umd/popper.min.js"
+
+
 # Martingoiriz
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.2.

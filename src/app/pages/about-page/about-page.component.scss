@@ -1,0 +1,291 @@
+// #about {
+//   background: white;
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: center;
+//   align-items: flex-end;
+//   height: 100vh;
+//   min-height: 100vh;
+//   max-height: 100vh;
+// }
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  position: relative;
+  height: 90vh;
+  min-height: 90vh;
+  max-height: 90vh;
+
+  #main-row-about {
+    align-items: flex-start;
+  }
+}
+
+#left-col-about {
+  color: black;
+  background: transparent;
+
+  .left-container {
+    flex-direction: column;
+
+    .estudios {
+      .degree {
+        padding: 10px 5px;
+
+        h3 {
+          font-size: 1.1em;
+          font-weight: 800;
+          text-align: center;
+        }
+
+        p {
+          font-size: 1.0em;
+          text-align: center;
+          padding-right: 0;
+          margin-right: 0;
+        }
+      }
+    }
+
+    .skills {
+      padding: 10px 5px;
+
+      .skills-img {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          height: 6vh;
+          width: 6vh;
+          margin: 5px 5px;
+          padding: 0;
+        }
+
+        .angular {
+          color: #c3002f;
+          font-size: 7vh;
+          margin: 5px .4vw;
+          padding: 0;
+        }
+
+        .ionic {
+          color: #478aff;
+          font-size: 7vh;
+          margin: 5px .4vw;
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+#right-col-about {
+  color: white;
+  text-shadow: 2px 2px 35px grey;
+  background-color: linear-gradient(135deg, #69d299 10%, #28c76f 100%);
+  background-image: url("../../../assets/img/me.jpg");
+  background-size: cover;
+  background-attachment: inherit;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  height: 100%;
+
+  .right-container {
+    .row {
+      padding: 0;
+      margin: 0;
+      .texto {
+        p {
+          width: 95%;
+          text-align: left;
+          font-size: 1.2rem;
+
+          a {
+            color: white;
+            font-weight: 800;
+            text-decoration: underline;
+          }
+        }
+      }
+
+      // .icons {
+      //   color: white;
+      // }
+    }
+  }
+}
+
+// *******************************
+
+// .experience {
+//   color: black;
+//   background: white;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: flex-start;
+//   align-items: center;
+//   height: inherit;
+//   width: 60%;
+
+//   .certif {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: center;
+//     align-items: center;
+//     text-align: center;
+//     flex-wrap: wrap;
+
+//     li {
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: center;
+//       align-items: center;
+//       text-align: center;
+//       padding: 2vw;
+
+//       h3 {
+//         font-size: 1.2em;
+//         font-weight: 800;
+//         text-align: center;
+//       }
+
+//       p {
+//         font-size: 1.0em;
+//       }
+//     }
+//   }
+// }
+
+// .skills-table {
+//   width: 100%;
+
+//   ul {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: center;
+//     align-items: center;
+//     flex-wrap: wrap;
+//     height: auto;
+//     width: 90%;
+//     padding: 1vh;
+
+//     li {
+//       img {
+//         height: 6vh;
+//         width: 6vh;
+//         margin: 5px 1vw;
+//         padding: 0;
+//       }
+
+//       .angular {
+//         color: #c3002f;
+//         font-size: 7vh;
+//         margin: 5px .4vw;
+//         padding: 0;
+//       }
+
+//       .ionic {
+//         color: #478aff;
+//         font-size: 7vh;
+//         margin: 5px .4vw;
+//         padding: 0;
+//       }
+//     }
+//   }
+// }
+
+// // -------------------------------- Div Derecho
+// .personalInfo {
+//   background-color: linear-gradient(135deg, #69d299 10%, #28c76f 100%);
+//   background-image: url("../../../assets/img/me.jpg");
+//   background-size: cover;
+//   background-attachment: inherit;
+//   background-repeat: no-repeat;
+//   background-position: center bottom;
+//   color: white;
+//   text-shadow: 2px 2px 35px grey;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: flex-start;
+//   align-items: center;
+//   height: inherit;
+//   width: 40%;
+
+//   p {
+//     width: 95%;
+//     text-align: left;
+
+//     a {
+//       color: white;
+//       font-weight: 800;
+//       text-decoration: underline;
+//     }
+//   }
+
+//   .personalContact {
+//     width: 90%;
+//     display: flex;
+//     flex-direction: row;
+//     align-items: center;
+//     justify-content: flex-start;
+//     padding: 0vh 2vh;
+//   }
+// }
+
+@media (max-width: 768px) {
+  #right-col-about {
+    .right-container {
+      .row {
+        .texto {
+          p {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+// #about {
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   min-height: auto;
+//   height: auto;
+//   max-height: auto;
+
+//   .personalInfo {
+//     width: 100%;
+//     background-position: top center;
+//   }
+
+//   .experience {
+//     width: 100%;
+//     justify-content: center;
+//     align-items: center;
+//   }
+// }
+
+// .certif {
+//   height: auto !important;
+// }
+
+// .skills-table {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   ul {
+//     padding: 0vh !important;
+//   }
+// }
+
+// @media (min-width: 1280px) {
+//   #about {
+//     max-height: 90vh;
+//   }
+// }

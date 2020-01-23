@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+// Variables
+// $fondo: linear-gradient(135deg, #81fbb8 10%, #28c76f 100%);
+//
+@import url('https://fonts.googleapis.com/css?family=Muli:400,600,800&display=swap');
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import "../node_modules/bootstrap/dist/css/bootstrap.scss";
+@import "./partials/_reset";
+@import "./partials/_variables";
