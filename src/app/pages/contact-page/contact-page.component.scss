@@ -27,19 +27,21 @@
     width: 50%;
     margin-bottom: 20px;
     text-align: left;
+    color: grey;
   }
 
   .contenido_contacto .formulario form input,
   .contenido_contacto .formulario form textarea {
-    border: 2px solid white;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
     resize: none;
     padding: 10px 5px;
     margin: 5px;
     font-size: 1.0em;
     text-align: left;
-    background: transparent;
-    color: white;
-    text-shadow: 1px 1px 2px grey;
+    color: grey;
+    // text-shadow: 1px 1px 2px grey;
+    background: white;
   }
 
   .contenido_contacto .formulario form input.este_no,
@@ -52,7 +54,7 @@
     width: 100%;
     background: black;
     border: none;
-    border-radius: 3px;
+    border-radius: 5px;
     border-width: 0;
     border-style: solid;
     transition: all 0.2s ease-in-out;
@@ -70,7 +72,6 @@
   #send:hover {
     background: white;
     color: black;
-    box-shadow: inset 0 0 0 1px #3a7999;
   }
 }
 

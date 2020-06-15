@@ -15,13 +15,17 @@ export class HeaderComponent implements OnInit {
   selectedItem: number = 1;
 
   goToHome() {
-    this.router.navigate(["/home"]);
+    this.router.navigate(["/"]);
     this.selectedItem = 1;
   }
 
   goToAbout() {
     this.router.navigate(["/about"]);
     this.selectedItem = 2;
+  }
+
+  goToBlog() {
+    window.open("http://www.martingoiriz.com.ar/blog");
   }
 
   goToContacto() {

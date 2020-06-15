@@ -5,10 +5,9 @@ import { ContactPageComponent } from "./pages/contact-page/contact-page.componen
 import { AboutPageComponent } from "./pages/about-page/about-page.component";
 
 const routes: Routes = [
-  { path: "home", component: HomePageComponent },
+  { path: "", component: HomePageComponent },
   { path: "about", component: AboutPageComponent },
-  { path: "contacto", component: ContactPageComponent },
-  { path: "", component: HomePageComponent }
+  { path: "contacto", component: ContactPageComponent }
 ];
 
 @NgModule({

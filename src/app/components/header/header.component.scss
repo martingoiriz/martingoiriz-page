@@ -23,6 +23,7 @@ header {
       justify-content: right;
       margin-left: 10vw;
       border: 0px;
+      cursor: pointer;
 
       a {
         color: grey;
@@ -31,6 +32,7 @@ header {
         cursor: pointer;
       }
       a:hover {
+        cursor: pointer;
         color: black;
         border: 1px solid black;
         border-left: hidden;

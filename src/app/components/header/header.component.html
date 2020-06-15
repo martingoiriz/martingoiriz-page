@@ -16,9 +16,10 @@
             (click)="goToAbout()" class="nav-link" id="goToAbout">Sobre
             mí</a>
         </li>
-        <!-- <li class="nav-item">
-          <a href="#blog" class="nav-link" id="goToBlog">Blog</a>
-        </li> -->
+        <li class="nav-item">
+          <a data-target=".navbar-collapse.show" data-toggle="collapse" (click)="goToBlog()" class="nav-link"
+            id="goToBlog">Blog</a>
+        </li>
         <li class="nav-item">
           <a [ngClass]="{'active': selectedItem == 3}" data-target=".navbar-collapse.show" data-toggle="collapse"
             (click)="goToContacto()" class="nav-link" id="goToContacto">Contacto</a>
