@@ -14,6 +14,13 @@ export class ContactPageComponent implements OnInit {
   ngOnInit() {}
 
   send() {
+    let pattern = /^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/;
+
+    if (!pattern.test(this.dataForm.email)) {
+      alert("Por favor, ingresá un email válido");
+      return false;
+    }
+
     if (this.dataForm.name && this.dataForm.email && this.dataForm.msg) {
       this.api.sendContact(this.dataForm).subscribe(res => {
         let status = JSON.parse(res["_body"])["data"];
